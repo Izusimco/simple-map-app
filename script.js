@@ -8,7 +8,7 @@ const kelvin = 273;
 
 function getWeatherByState(state) {
 	const api = "644647f5e3b5dffd7959af10fd5b236c";
-	const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${api}`;
+	const url = `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${api}`;
 	
 	fetch(url)
 	  .then(response => response.json())
